@@ -36,7 +36,7 @@ app.directive("drink", function () {
 </script>
 ~~~
 
-** Using scope **
+**Using scope**
 
 ~~~html
 <div ng-app="drinkApp">
