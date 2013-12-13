@@ -61,3 +61,5 @@ app.directive("drink", function () {
 });
 </script>
 ~~~
+
+![skitched-20131213-082034](https://f.cloud.github.com/assets/184383/1740651/70eb0d42-63cf-11e3-92b1-bf45ba170b4c.jpg)
