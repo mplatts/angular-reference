@@ -38,6 +38,7 @@ app.directive("drink", function () {
 
 ** Using scope **
 
+~~~html
 <div ng-app="drinkApp">
   <div ng-controller="AppCtrl">
     <div drink flavor="strawberry"></div>
@@ -59,3 +60,4 @@ app.directive("drink", function () {
   };
 });
 </script>
+~~~
