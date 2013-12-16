@@ -3,17 +3,31 @@
 ### Inheritance
 [Good explanation](http://stackoverflow.com/questions/14049480/what-are-the-nuances-of-scope-prototypal-prototypical-inheritance-in-angularjs/14049482)
 
-**Primitive values aren't read from prototype...created fresh on scope**
+**You can read properties off the parent scope**
+
+![diagram](http://i.stack.imgur.com/aTAGg.png)
+~~~javascript
+childScope.aString === 'parent string'
+childScope.anArray[1] === 20
+childScope.anObject.property1 === 'parent prop1'
+childScope.aFunction() === 'parent output'
+~~~
+
+**But you can't write to parent scope if value is primitive!**
+
+What happens is that a new variable is created on the child scope. 
+
 ~~~javascript
 childScope.aString = 'child string'
 ~~~
+
 ![primitives](http://i.stack.imgur.com/OyVPW.png)
 
 ~~~javascript
 childScope.anArray[1] = '22'
 childScope.anObject.property1 = 'child prop1'
 ~~~
-**Values of objects are read from prototype (if doesn't exist on scope)**
+**Values of arrays/objects are read from prototype (if doesn't exist on scope)**
 ![from objects](http://i.stack.imgur.com/2QceU.png)
 
 ### $watch
