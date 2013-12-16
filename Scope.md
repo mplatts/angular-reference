@@ -1,7 +1,7 @@
 ## Scope
 
 ### Inheritance
-![Good explanation](http://stackoverflow.com/questions/14049480/what-are-the-nuances-of-scope-prototypal-prototypical-inheritance-in-angularjs/14049482)
+[Good explanation](http://stackoverflow.com/questions/14049480/what-are-the-nuances-of-scope-prototypal-prototypical-inheritance-in-angularjs/14049482)
 
 **Primitive values aren't read from prototype...created fresh on scope**
 ![primitives](http://i.stack.imgur.com/OyVPW.png)
