@@ -23,12 +23,13 @@ childScope.aString = 'child string'
 
 ![primitives](http://i.stack.imgur.com/OyVPW.png)
 
+**Values of arrays/objects are read from prototype (if doesn't exist on scope)**
+![from objects](http://i.stack.imgur.com/2QceU.png)
+
 ~~~javascript
 childScope.anArray[1] = '22'
 childScope.anObject.property1 = 'child prop1'
 ~~~
-**Values of arrays/objects are read from prototype (if doesn't exist on scope)**
-![from objects](http://i.stack.imgur.com/2QceU.png)
 
 ### $watch
 
