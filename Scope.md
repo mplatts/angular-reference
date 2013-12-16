@@ -4,8 +4,15 @@
 [Good explanation](http://stackoverflow.com/questions/14049480/what-are-the-nuances-of-scope-prototypal-prototypical-inheritance-in-angularjs/14049482)
 
 **Primitive values aren't read from prototype...created fresh on scope**
+~~~javascript
+childScope.aString = 'child string'
+~~~
 ![primitives](http://i.stack.imgur.com/OyVPW.png)
 
+~~~javascript
+childScope.anArray[1] = '22'
+childScope.anObject.property1 = 'child prop1'
+~~~
 **Values of objects are read from prototype (if doesn't exist on scope)**
 ![from objects](http://i.stack.imgur.com/2QceU.png)
 
